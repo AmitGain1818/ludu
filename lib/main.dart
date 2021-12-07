@@ -22,13 +22,13 @@ class LuduGame extends StatefulWidget {
 }
 
 class _LuduGameState extends State<LuduGame> {
-  int leftDiceNumber = 1;
-  int rightDiceNumber = 1;
+  int leftLuduNumber = 1;
+  int rightLuduNumber = 1;
 
-  void changeDiceFace() {
+  void changeLuduFace() {
     setState(() {
-      leftDiceNumber = Random().nextInt(6) + 1;
-      rightDiceNumber = Random().nextInt(6) + 1;
+      leftLuduNumber = Random().nextInt(6) + 1;
+      rightLuduNumber = Random().nextInt(6) + 1;
     });
   }
 
@@ -40,17 +40,17 @@ class _LuduGameState extends State<LuduGame> {
           Expanded(
             child: TextButton(
               onPressed: () {
-                changeDiceFace();
+                changeLuduFace();
               },
-              child: Image.asset('images/dice$leftDiceNumber.png'),
+              child: Image.asset('images/dice$leftLuduNumber.png'),
             ),
           ),
           Expanded(
             child: TextButton(
               onPressed: () {
-                changeDiceFace();
+                changeLuduFace();
               },
-              child: Image.asset('images/dice$rightDiceNumber.png'),
+              child: Image.asset('images/dice$rightLuduNumber.png'),
             ),
           ),
         ],
