@@ -9,6 +9,7 @@ void main() {
         backgroundColor: Colors.purple,
         appBar: AppBar(
           title: Text('Dicee'),
+          centerTitle: true,
           backgroundColor: Colors.cyan,
         ),
         body: LuduGame(),
