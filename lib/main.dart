@@ -26,9 +26,14 @@ class _LuduGameState extends State<LuduGame> {
   int leftLuduNumber = 1;
   int rightLuduNumber = 1;
 
-  void changeLuduFace() {
+  void changeLuduFace1() {
     setState(() {
       leftLuduNumber = Random().nextInt(6) + 1;
+    });
+  }
+
+  void changeLuduFace2() {
+    setState(() {
       rightLuduNumber = Random().nextInt(6) + 1;
     });
   }
@@ -41,7 +46,7 @@ class _LuduGameState extends State<LuduGame> {
           Expanded(
             child: TextButton(
               onPressed: () {
-                changeLuduFace();
+                changeLuduFace1();
               },
               child: Image.asset('images/dice$leftLuduNumber.png'),
             ),
@@ -49,7 +54,7 @@ class _LuduGameState extends State<LuduGame> {
           Expanded(
             child: TextButton(
               onPressed: () {
-                changeLuduFace();
+                changeLuduFace2();
               },
               child: Image.asset('images/dice$rightLuduNumber.png'),
             ),
