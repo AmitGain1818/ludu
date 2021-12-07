@@ -52,6 +52,9 @@ class _LuduGameState extends State<LuduGame> {
               child: Image.asset('images/dice$leftLuduNumber.png'),
             ),
           ),
+          SizedBox(
+            width: 20,
+          ),
           Expanded(
             child: TextButton(
               onPressed: () {
