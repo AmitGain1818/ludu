@@ -4,8 +4,9 @@ import 'package:flutter/material.dart';
 void main() {
   return runApp(
     MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: Scaffold(
-        backgroundColor: Colors.cyan,
+        backgroundColor: Colors.purple,
         appBar: AppBar(
           title: Text('Dicee'),
           backgroundColor: Colors.cyan,
