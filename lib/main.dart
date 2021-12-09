@@ -49,7 +49,7 @@ class _LuduGameState extends State<LuduGame> {
               onPressed: () {
                 changeLuduFace1();
               },
-              child: Image.asset('images/dice$leftLuduNumber.png'),
+              child: Image.asset('images/Ludu$leftLuduNumber.png'),
             ),
           ),
           SizedBox(
@@ -60,7 +60,7 @@ class _LuduGameState extends State<LuduGame> {
               onPressed: () {
                 changeLuduFace2();
               },
-              child: Image.asset('images/dice$rightLuduNumber.png'),
+              child: Image.asset('images/Ludu$rightLuduNumber.png'),
             ),
           ),
         ],
